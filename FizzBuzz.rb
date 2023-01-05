@@ -1,12 +1,19 @@
-puts "Enter a number"
-input = gets.chomp
+def input_number
+  puts "Enter a number"
+  input = gets.chomp.to_i
+end
 
-if input % 3 == 0
-  puts "Fizz"
-elsif input % 5 == 0
-  puts "Buzz"
-elsif input % 3 == 0 && input % 5 == 0
-  puts "FizzBuzz"
-else
-  puts input
+def FizzBuzz(input)
+  if input % 3 == 0 && input % 5 == 0
+    puts "FizzBuzz"
+  elsif input % 5 == 0
+    puts "Buzz"
+  elsif input % 3 == 0 
+    puts "Fizz"
+  else
+    puts input
+  end
+end
+
+FizzBuzz(input_number)
 
