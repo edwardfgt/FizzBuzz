@@ -5,15 +5,15 @@ end
 
 def fizzbuzz(input)
   if input % 3 == 0 && input % 5 == 0
-    puts "FizzBuzz"
+    "FizzBuzz"
   elsif input % 5 == 0
-    puts "Buzz"
+    "Buzz"
   elsif input % 3 == 0 
-    puts "Fizz"
+    "Fizz"
   else
-    puts input
+    input
   end
 end
 
-fizzbuzz(input_number)
+puts fizzbuzz(input_number)
 
