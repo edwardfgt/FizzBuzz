@@ -3,7 +3,7 @@ def input_number
   input = gets.chomp.to_i
 end
 
-def FizzBuzz(input)
+def fizzbuzz(input)
   if input % 3 == 0 && input % 5 == 0
     puts "FizzBuzz"
   elsif input % 5 == 0
@@ -15,5 +15,5 @@ def FizzBuzz(input)
   end
 end
 
-FizzBuzz(input_number)
+fizzbuzz(input_number)
 
